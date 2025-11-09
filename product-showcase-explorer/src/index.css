@@ -1,1 +1,27 @@
 @import "tailwindcss";
+body {
+  @apply bg-gradient-to-br from-blue-50 via-white to-pink-50 text-gray-800;
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+* {
+  scrollbar-width: none;
+}
